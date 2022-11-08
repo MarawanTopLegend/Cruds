@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+}
+body{
+    background: #41295a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 96vh;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 60em;
+    margin: auto;
+}
+.content button:hover{
+    transform: scale(1.05);
+}
+.Contentinfo{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+input{
+    height: 2em;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+input:focus{
+transform: scale(1.03);
+}
+.MainButtons {
+    background-color: blueviolet;
+    margin-bottom: 0.5em;
+    border-radius: 100px;
+    height: 2em;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.thirdlayer{
+    display: flex;
+    justify-content: space-between;
+}
+.thirdlayer button{
+    background-color: blueviolet;
+    border-radius: 100px;
+    color: white;
+    width: 30em;
+    height: 2em;
+    margin-bottom: 0.5em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.buttontotal{
+    background-color: red;
+    padding: 0.2em;
+
+}
+th{
+
+   color: white;
+}
+td{
+    color: white;
+    padding-left: 1.3em;
+    
+}
+table{
+    border-collapse: collapse;
+   width: 80%;
+   margin: auto;
+   
+}
+tr{
+    border: 1px solid white;
+    border-left: 0px;
+    border-right: 0px;
+}
+#Update{
+background-color: green;
+cursor: pointer;
+transition: all 0.3s;
+width: 100%;
+color: white;
+}
+#DeleteButton{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+#TheDeleteAllButton button{
+width: 100%;
+}
+#DeleteButton:hover , #Update:hover{
+    transform: scale(1.1);
+}
+@media (max-width:1023px){
+.content{
+    width: 39em;
+}
+td{
+    color: white;
+   
+}
+}
+
+ @media (max-width:641px){
+    .content{
+        width: 20em;
+    }
+    td{
+        color: white;
+        font-size: 0.5em;
+    }
+    .buttontotal{
+        margin-bottom: 0.5em;
+    }
+ }
+@media (max-width:300px){
+    .content{
+        width: 15em;
+    }
+    td{
+        padding-left: 0.5em;
+        font-size: 0.3em;
+    }
+    .thirdlayer button{
+        font-size: 0.7em;
+    }
+    #DeleteButton , #Update{
+        font-size: 1.5em;
+        border: 0.5px solid black;
+    }
+}

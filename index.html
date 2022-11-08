@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="stylesheet" href="Cruds.css">
+</head>
+<body>
+    <section>
+        <div class="content">
+            <div class="Contentinfo">
+                <h1>CRUDS</h1>
+                <p>Create Read Update Delete Search</p>
+            </div>
+            <input type="email" placeholder="title" class="MainInputs" id="title">
+            <div class="secondlayer">
+                <input type="email" placeholder="price" id="price" onkeyup="TheTotal()">
+                <input type="email" placeholder="taxes" id="taxes" onkeyup="TheTotal()">
+                <input type="email" placeholder="ads" id="ads" onkeyup="TheTotal()">
+                <input type="email" placeholder="discount" id="discount" onkeyup="TheTotal()">
+                <button type="submit" class="buttontotal" id="totalbutton"> Total </button>
+            </div>
+            <input type="email" placeholder="count" class="MainInputs" id="count">
+            <input type="email" placeholder="catagory" class="MainInputs" id="catagory">
+            <button type="submit" class="MainButtons" id="create"> Create </button>
+            <input type="email" placeholder="search" class="MainInputs" id="search" onkeyup="searchdata(this.value)">
+            <div class="thirdlayer">
+                <button type="submit" id="searchbytitle" onclick="getsearchmood(this.id)"> Search By Title </button>
+                <button type="submit" id="searchbycatagory" onclick="getsearchmood(this.id)"> Search By Catagory </button>
+            </div>
+            <div id="TheDeleteAllButton">
+            </div>
+        </div>
+    </section>
+ 
+    <table id="table">
+        <tr> <td>ID</td> <td>TITLE</td> <td>PRICE</td> <td>TAXES</td> <td>ADS</td> <td>DISCOUNT</td> <td>TOTAL</td> <td>CATAGORY</td> <td>UPDATE</td> <td>DELETE</td> </tr> 
+     <tbody id="tbody">
+    
+        
+    </tbody>
+        </table>
+    
+    <script src="MyCruds.js"></script>
+</body>
+</html>
